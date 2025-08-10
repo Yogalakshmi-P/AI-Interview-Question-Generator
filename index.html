@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Interview Question Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>AI Interview Question Generator</h1>
+      <p>Select a category and generate random questions to practice!</p>
+    </header>
+
+    <main>
+      <div class="controls">
+        <select id="category">
+          <option value="java">Java</option>
+          <option value="networking">Networking</option>
+          <option value="dbms">DBMS</option>
+          <option value="aptitude">Aptitude</option>
+        </select>
+        <button id="generateBtn">Generate Question</button>
+      </div>
+
+      <div class="question-box" id="questionBox">
+        <p>Select a category and click "Generate Question".</p>
+      </div>
+
+      <div class="save-section">
+        <button id="saveBtn">Save for Review</button>
+      </div>
+
+      <h2>Saved Questions</h2>
+      <ul id="savedList"></ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

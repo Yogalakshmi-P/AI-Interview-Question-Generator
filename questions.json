@@ -1,0 +1,26 @@
+{
+  "java": [
+    "What is the difference between JDK, JRE, and JVM?",
+    "Explain the concept of Inheritance in Java.",
+    "What are Java Access Modifiers?",
+    "What is the difference between == and equals() in Java?"
+  ],
+  "networking": [
+    "Explain the OSI model.",
+    "What is the difference between TCP and UDP?",
+    "What is an IP address?",
+    "What is DNS and how does it work?"
+  ],
+  "dbms": [
+    "What is the difference between SQL and NoSQL databases?",
+    "Explain normalization and its types.",
+    "What is an ACID property?",
+    "What is the difference between primary key and foreign key?"
+  ],
+  "aptitude": [
+    "If the cost price of an article is ₹200 and the selling price is ₹250, find the profit percentage.",
+    "Solve: 2x + 3 = 11",
+    "Find the next number in the series: 2, 6, 12, 20, ?",
+    "If a train travels 120 km in 2 hours, what is its average speed?"
+  ]
+}
