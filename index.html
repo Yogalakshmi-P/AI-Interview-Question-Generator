@@ -1,39 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Interview Question Generator</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AI Interview Question Generator (MCQ)</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>AI Interview Question Generator</h1>
-      <p>Select a category and generate random questions to practice!</p>
+    <header class="site-header">
+      <div class="container">
+        <h1>AI Interview Question Generator</h1>
+        <p class="subtitle">
+          Choose a category → generate 10 random MCQs → check your score. No
+          backend required.
+        </p>
+      </div>
     </header>
 
-    <main>
-      <div class="controls">
-        <select id="category">
+    <main class="container">
+      <section class="controls">
+        <label for="category">Category</label>
+        <select id="category" aria-label="Select category">
           <option value="java">Java</option>
           <option value="networking">Networking</option>
           <option value="dbms">DBMS</option>
           <option value="aptitude">Aptitude</option>
         </select>
-        <button id="generateBtn">Generate Question</button>
-      </div>
 
-      <div class="question-box" id="questionBox">
-        <p>Select a category and click "Generate Question".</p>
-      </div>
+        <button id="generateBtn" class="btn">Generate 10 Questions</button>
+        <button
+          id="regenerateBtn"
+          class="btn ghost"
+          title="Generate a new set of 10 questions from the same category"
+        >
+          Regenerate
+        </button>
+      </section>
 
-      <div class="save-section">
-        <button id="saveBtn">Save for Review</button>
-      </div>
+      <section id="questionBox" class="question-area" aria-live="polite">
+        <p class="hint">
+          Select a category and click <strong>Generate 10 Questions</strong>.
+        </p>
+      </section>
 
-      <h2>Saved Questions</h2>
-      <ul id="savedList"></ul>
+      <section class="actions">
+        <button id="checkScore" class="btn primary" disabled>
+          Check Score
+        </button>
+        <button id="clearAnswers" class="btn ghost" disabled>
+          Clear Answers
+        </button>
+      </section>
+
+      <section class="saved">
+        <h2>Saved Questions (Review Later)</h2>
+        <div class="saved-controls">
+          <button id="clearSaved" class="btn ghost">Clear Saved</button>
+        </div>
+        <ol id="savedList" class="saved-list" aria-live="polite"></ol>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small
+          >Built with HTML • CSS • JavaScript • localStorage -
+          Yogalakshmi</small
+        >
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
