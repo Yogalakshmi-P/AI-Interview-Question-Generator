@@ -11,7 +11,6 @@ This is a **frontend-only** web application that generates **random interview qu
 - ✅ Get **10 random questions** per category.
 - ✅ Each question includes **4 multiple-choice options**.
 - ✅ Simple **HTML, CSS, JavaScript** frontend (No backend).
-- ✅ **Mobile-friendly** responsive design.
 - ✅ Hosted on **Firebase** for fast and secure access.
 
 ---
